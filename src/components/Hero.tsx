@@ -3,7 +3,7 @@ import { ShieldCheck, Clock, Headphones, Award, GraduationCap, Users, Star, Chev
 import { Button } from "@/components/ui/button";
 import { usePublicHero } from "@/hooks/usePublicHero";
 import { cn } from "@/lib/utils";
-import heroGraduate from "@/assets/hero-student.png.asset.json";
+import heroImage from "@/assets/hero.png";
 
 const scrollToSection = (id: string) => {
   const el = document.getElementById(id);
@@ -38,10 +38,10 @@ const Hero = () => {
   const secondaryTarget = data?.secondary_button_target ?? "beneficios";
 
   const slides = useMemo(() => {
-    const main = data?.background_image_url || heroGraduate.url;
-    const extras = (data?.extra_image_urls ?? []).filter(Boolean);
-    return [main, ...extras];
-  }, [data?.background_image_url, data?.extra_image_urls]);
+  const main = data?.background_image_url || heroImage;
+  const extras = (data?.extra_image_urls ?? []).filter(Boolean);
+  return [main, ...extras];
+}, [data?.background_image_url, data?.extra_image_urls]);
 
   const [slide, setSlide] = useState(0);
 
@@ -53,7 +53,7 @@ const Hero = () => {
     return () => clearInterval(id);
   }, [slides.length]);
 
-  const currentImage = slides[slide % Math.max(slides.length, 1)] || heroGraduate.url;
+  const currentImage = slides[slide % Math.max(slides.length, 1)] || heroImage;
 
   const checks = [
     { icon: ShieldCheck, label: "Certificação", sub: "válida em todo Brasil" },
