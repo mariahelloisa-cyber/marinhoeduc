@@ -21,7 +21,7 @@ const Header = () => {
           <img
   src={logoMarinho}
   alt="Marinho Educacional"
-  className="h-14 w-14 object-contain border border-red-500"
+  className="h-14 w-14 object-contain"
 />
           <span className="font-display text-lg font-bold tracking-wide text-primary hidden sm:inline">
             MARINHO EDUCACIONAL
