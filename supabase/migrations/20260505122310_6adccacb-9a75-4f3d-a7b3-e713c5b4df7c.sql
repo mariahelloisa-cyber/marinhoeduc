@@ -1,0 +1,1 @@
+update site_content set value = jsonb_set(value, '{title}', '"Conquiste seu diploma mais rápido <highlight>do que você imagina</highlight>"') where key='hero';
