@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { usePublicContact, DEFAULT_CONTACT } from "@/hooks/usePublicContact";
-import logoMarinho from "@/assets/logo-marinho.png";
+import logoMarinho from "@/assets/logoMarinho.png";
 
 const Footer = () => {
   const { data } = usePublicContact();
