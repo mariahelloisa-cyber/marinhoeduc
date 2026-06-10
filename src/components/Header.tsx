@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Search, Shield } from "lucide-react";
 import { useState } from "react";
-import marinhoLogo from "@/assets/marinho-educacional-logo.png.asset.json";
+import logoMarinho from "@/assets/logoMarinho.png";
 import WhatsAppButton from "./WhatsAppButton";
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
     <header className="sticky top-0 z-40 w-full bg-background text-foreground border-b border-border shadow-soft">
       <div className="container flex h-20 items-center justify-center gap-6">
         <Link to="/" className="flex items-center gap-3 shrink-0">
-          <img src={marinhoLogo.url} alt="Marinho Educacional" className="h-14 w-14 object-contain" />
+          <img src={logoMarinho} alt="Marinho Educacional" className="h-14 w-14 object-contain" />
           <span className="font-display text-lg font-bold tracking-wide text-primary hidden sm:inline">
             MARINHO EDUCACIONAL
           </span>
