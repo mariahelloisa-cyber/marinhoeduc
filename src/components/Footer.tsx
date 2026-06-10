@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { usePublicContact, DEFAULT_CONTACT } from "@/hooks/usePublicContact";
-import marinhoLogo from "@/assets/marinho-educacional-logo.png.asset.json";
+import logoMarinho from "@/assets/logo-marinho.png";
 
 const Footer = () => {
   const { data } = usePublicContact();
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <div className="flex items-center gap-3">
-              <img src={marinhoLogo.url} alt="Marinho Educacional" className="h-14 w-14 rounded-md bg-white/5 object-contain p-1" />
+             <img src={logoMarinho} alt="Marinho Educacional" className="h-14 w-14 rounded-md bg-white/5 object-contain p-1" />
               <div>
                 <p className="font-display text-2xl font-bold tracking-wide text-accent">MARINHO EDUCACIONAL</p>
                 <p className="text-xs text-primary-foreground/70">Educação que transforma</p>
