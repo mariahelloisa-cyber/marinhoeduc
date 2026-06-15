@@ -62,8 +62,8 @@ const Hero = () => {
   ];
 
   const stats = [
-    { icon: GraduationCap, value: "+200", label: "Cursos disponíveis" },
-    { icon: Users, value: "+120 mil", label: "Alunos formados" },
+    { icon: GraduationCap, value: "+3000", label: "Cursos disponíveis" },
+    { icon: Users, value: "+12 mil", label: "Alunos formados" },
     { icon: Star, value: "4,9/5", label: "Avaliação dos alunos" },
     { icon: ShieldCheck, value: "100%", label: "Online e reconhecido" },
   ];
